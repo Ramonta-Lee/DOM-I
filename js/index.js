@@ -82,7 +82,7 @@ navAnchorSix.textContent = 'Content';
 const headLine = document.querySelector('h1');
 headLine.setAttribute('style', 'white-space: pre;');
 headLine.textContent = 'Dom \r\n is \r\n Awesome';
-
+headLine.style.color = 'blue';
 
 //button
 const getButton = document.querySelector('button');
@@ -100,31 +100,35 @@ const titleOne = desc[0];
 const textOne = descT[0];
 
 titleOne.textContent = 'Features';
-textOne.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textOne.textContent = siteContent['main-content']['features-content']
+// textOne.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
 const titleTwo = desc[1];
 const textTwo = descT[1];
 
 titleTwo.textContent = 'About';
-textTwo.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textTwo.textContent = siteContent['main-content']['about-content']
 
 const titleThree = desc[2];
 const textThree = descT[2];
 
 titleThree.textContent = 'Services';
-textThree.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+textThree.textContent = siteContent['main-content']['services-content']
+
 
 const titleFour = desc[3];
 const textFour = descT[3];
 
 titleFour.textContent = 'Product';
-textFour.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+textFour.textContent = siteContent['main-content']['product-content']
+
 
 const titleFive = desc[4];
 const textFive = descT[4];
 
 titleFive.textContent = 'Vision';
-textFive.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+textFive.textContent = siteContent['main-content']['vision-content']
+
 
 //Middle img
 const middleImg = document.getElementById('middle-img');
@@ -137,7 +141,7 @@ bottomDesc.textContent = 'Contact';
 const bottomDescT = document.querySelectorAll('.contact p');
 const contactText = bottomDescT[0];
 
-//need to add <break>
+
 contactText.setAttribute('style', 'white-space: pre;');
 contactText.textContent = '123 Way 456 Street \r\n Somewhere, USA';
 
