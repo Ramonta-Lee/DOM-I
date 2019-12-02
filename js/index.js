@@ -41,54 +41,48 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+
 var navContainer = document.querySelector('nav');
 
 var newAnchorOne = document.createElement('a');
-var newAnchorT = document.createElement('div');
+newAnchorOne.textContent = 'Goodbye';
 
+var newAnchorT = document.createElement('div');
 newAnchorT.textContent = 'Hello';
 newAnchorT.style.color = 'green';
-
-newAnchorOne.textContent = 'Goodbye';
-newAnchorOne.style.color = 'green';
 
 navContainer.prepend(newAnchorT);
 navContainer.appendChild(newAnchorOne);
 
 const navAnchor = document.querySelectorAll('a');
+navAnchor.forEach(item => item.style.color = 'green');
 
 const navAnchorOne = navAnchor[0];
 navAnchorOne.textContent = 'Services';
-navAnchorOne.style.color = 'green';
 
 const navAnchorTwo = navAnchor[1];
 navAnchorTwo.textContent = 'Product';
-navAnchorTwo.style.color = 'green';
 
 const navAnchorThree = navAnchor[2];
 navAnchorThree.textContent = 'Vision';
-navAnchorThree.style.color = 'green';
 
 const navAnchorFour = navAnchor[3];
 navAnchorFour.textContent = 'Features';
-navAnchorFour.style.color = 'green';
 
 const navAnchorFive = navAnchor[4];
 navAnchorFive.textContent = 'About';
-navAnchorFive.style.color = 'green';
 
 const navAnchorSix = navAnchor[5];
 navAnchorSix.textContent = 'Content';
-navAnchorSix.style.color = 'green';
 
 //End of nav 
 
 //Headline
-//Need to fix headline breaks
-const headLine = document.querySelector('h1');
-headLine.setAttribute('style', 'white-space: pre;');
 
-headLine.textContent = 'Dom \r\n is \r\n Awesome';
+const headLine = document.querySelector('h1');
+// headLine.setAttribute('style', 'white-space: pre;');
+headLine.textContent = 'Dom is Awesome';
+// headLine.textContent = 'Dom \r\n is \r\n Awesome';
 
 
 //button
