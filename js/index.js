@@ -46,43 +46,42 @@ var navContainer = document.querySelector('nav');
 
 var newAnchorOne = document.createElement('a');
 newAnchorOne.textContent = 'Goodbye';
-
-var newAnchorT = document.createElement('div');
-newAnchorT.textContent = 'Hello';
-newAnchorT.style.color = 'green';
-
-navContainer.prepend(newAnchorT);
 navContainer.appendChild(newAnchorOne);
+
+var newAnchorT = document.createElement('a');
+newAnchorT.textContent = 'Hello';
+navContainer.prepend(newAnchorT);
+
 
 const navAnchor = document.querySelectorAll('a');
 navAnchor.forEach(item => item.style.color = 'green');
 
-const navAnchorOne = navAnchor[0];
+
+const navAnchorOne = navAnchor[1];
 navAnchorOne.textContent = 'Services';
 
-const navAnchorTwo = navAnchor[1];
+const navAnchorTwo = navAnchor[2];
 navAnchorTwo.textContent = 'Product';
 
-const navAnchorThree = navAnchor[2];
+const navAnchorThree = navAnchor[3];
 navAnchorThree.textContent = 'Vision';
 
-const navAnchorFour = navAnchor[3];
+const navAnchorFour = navAnchor[4];
 navAnchorFour.textContent = 'Features';
 
-const navAnchorFive = navAnchor[4];
+const navAnchorFive = navAnchor[5];
 navAnchorFive.textContent = 'About';
 
-const navAnchorSix = navAnchor[5];
+const navAnchorSix = navAnchor[6];
 navAnchorSix.textContent = 'Content';
-
 //End of nav 
+
 
 //Headline
 
 const headLine = document.querySelector('h1');
-// headLine.setAttribute('style', 'white-space: pre;');
-headLine.textContent = 'Dom is Awesome';
-// headLine.textContent = 'Dom \r\n is \r\n Awesome';
+headLine.setAttribute('style', 'white-space: pre;');
+headLine.textContent = 'Dom \r\n is \r\n Awesome';
 
 
 //button
@@ -150,3 +149,4 @@ emailText.textContent = 'sales@greatidea.io';
 
 const feet = document.querySelector('footer p');
 feet.textContent = 'Copyright Great Idea! 2018';
+
