@@ -101,7 +101,7 @@ const textOne = descT[0];
 
 titleOne.textContent = 'Features';
 textOne.textContent = siteContent['main-content']['features-content']
-// textOne.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
 
 const titleTwo = desc[1];
 const textTwo = descT[1];
@@ -146,11 +146,12 @@ contactText.setAttribute('style', 'white-space: pre;');
 contactText.textContent = '123 Way 456 Street \r\n Somewhere, USA';
 
 const phoneText = bottomDescT[1];
-phoneText.textContent = '1 (888) 888-8888';
+phoneText.textContent = siteContent['contact']['phone'];
 
 const emailText = bottomDescT[2];
-emailText.textContent = 'sales@greatidea.io';
+emailText.textContent = siteContent['contact']['email'];
 
+//footer
 const feet = document.querySelector('footer p');
-feet.textContent = 'Copyright Great Idea! 2018';
+feet.textContent = siteContent['footer']['copyright'];
 
