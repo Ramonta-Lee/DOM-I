@@ -39,4 +39,119 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+
+var navContainer = document.querySelector('nav');
+
+var newAnchorOne = document.createElement('a');
+newAnchorOne.textContent = 'Goodbye';
+navContainer.appendChild(newAnchorOne);
+
+var newAnchorT = document.createElement('a');
+newAnchorT.textContent = 'Hello';
+navContainer.prepend(newAnchorT);
+
+
+const navAnchor = document.querySelectorAll('a');
+navAnchor.forEach(item => item.style.color = 'green');
+
+
+const navAnchorOne = navAnchor[1];
+navAnchorOne.textContent = 'Services';
+
+const navAnchorTwo = navAnchor[2];
+navAnchorTwo.textContent = 'Product';
+
+const navAnchorThree = navAnchor[3];
+navAnchorThree.textContent = 'Vision';
+
+const navAnchorFour = navAnchor[4];
+navAnchorFour.textContent = 'Features';
+
+const navAnchorFive = navAnchor[5];
+navAnchorFive.textContent = 'About';
+
+const navAnchorSix = navAnchor[6];
+navAnchorSix.textContent = 'Content';
+//End of nav 
+
+
+//Headline
+
+const headLine = document.querySelector('h1');
+headLine.setAttribute('style', 'white-space: pre;');
+headLine.textContent = 'Dom \r\n is \r\n Awesome';
+headLine.style.color = 'blue';
+
+//button
+const getButton = document.querySelector('button');
+getButton.textContent = 'Get Started';
+
+//Code img
+let codeImg = document.getElementById('cta-img');
+codeImg.setAttribute('src', 'img/header-img.png');
+
+//Main Content
+const desc = document.querySelectorAll('h4');
+const descT = document.querySelectorAll('p');
+
+const titleOne = desc[0];
+const textOne = descT[0];
+
+titleOne.textContent = 'Features';
+textOne.textContent = siteContent['main-content']['features-content']
+
+
+const titleTwo = desc[1];
+const textTwo = descT[1];
+
+titleTwo.textContent = 'About';
+textTwo.textContent = siteContent['main-content']['about-content']
+
+const titleThree = desc[2];
+const textThree = descT[2];
+
+titleThree.textContent = 'Services';
+textThree.textContent = siteContent['main-content']['services-content']
+
+
+const titleFour = desc[3];
+const textFour = descT[3];
+
+titleFour.textContent = 'Product';
+textFour.textContent = siteContent['main-content']['product-content']
+
+
+const titleFive = desc[4];
+const textFive = descT[4];
+
+titleFive.textContent = 'Vision';
+textFive.textContent = siteContent['main-content']['vision-content']
+
+
+//Middle img
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+// Contact
+const bottomDesc = document.querySelector('.contact h4');
+bottomDesc.textContent = 'Contact';
+
+const bottomDescT = document.querySelectorAll('.contact p');
+const contactText = bottomDescT[0];
+
+
+contactText.setAttribute('style', 'white-space: pre;');
+contactText.textContent = '123 Way 456 Street \r\n Somewhere, USA';
+
+const phoneText = bottomDescT[1];
+phoneText.textContent = siteContent['contact']['phone'];
+
+const emailText = bottomDescT[2];
+emailText.textContent = siteContent['contact']['email'];
+
+//footer
+const feet = document.querySelector('footer p');
+feet.textContent = siteContent['footer']['copyright'];
+
